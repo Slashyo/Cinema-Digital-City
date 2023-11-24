@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="assets/css/style.scss">
+	<title>Contact</title>
+</head>
+
+<body>
+	<header class="bg-white z-50 fixed top-0 w-full shadow">
+        <nav id="main-nav" class="bg-white max-w-5xl mx-auto font-poppins p-6 flex items-center justify-between">
+            <a href="top" class="flex" aria-label="Page d'accueil du portfolio">
+                <img src="assets/image/logo.png" class="hidden md:w-7 md:inline md:mr-4" alt="" />
+                <span aria-hidden="true" class="text-lg lg:text-xl">
+                    French <strong>M<span class="text-rose-600">ovie</span></strong>
+                </span>
+            </a>
+            <button aria-label="toggle button" aria-expanded="false" id="menu-btn" class="cursor-pointer w-7 md:hidden">
+                <img src="assets/image/menu.svg" alt="">
+            </button>
+            <ul id="toggled-menu"
+                class="w-full absolute top-full left-0 -translate-y-full -z-10 text-gray-800 border-b border-gray-200 flex flex-col items-center md:static md:z-10 md:w-min md:transform-none md:border-none md:flex-row">
+                <li class="py-4 md:py-0 md:mr-6">
+                    <a href="index.html" class="text-sm uppercase font-semibold w-full hover:text-rose-600">Accueil
+                    </a>
+                </li>
+                <li class="py-4 md:py-0 md:mr-6">
+                    <a href="#dashboard" class="text-sm uppercase font-semibold w-full hover:text-rose-600">Dashboard
+                    </a>
+                </li>
+                <li class="py-4 md:py-0 md:mr-6">
+                    <a href="contact.html" class="text-sm uppercase font-semibold w-full hover:text-rose-600">Contact
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+
+
+	<div class="my-24">
+		<h2 class="font-text text-center">Contact us</h2>
+
+		<div class="flex md:flex-row md:justify-around md:items-center flex-col items-center justify-start">
+			<div>
+				<!-- <img src="" alt=""> image to add-->
+			</div>
+			<div>
+				<form action="#">
+					<div>
+						<label for="username">Username</label>
+						<input type="text" name="username" id="username" autocomplete="new-password">
+					</div>
+					<div>
+						<label for="email">Email</label>
+						<input type="text" name="email" id="email" autocomplete="new-password">
+					</div>
+					<label for="msg">Message</label>
+					<textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+				</form>
+			</div>
+		</div>
+		
+	</div>
+	<script src="assets/script/script.js"></script>
+</body>
+
+</html>

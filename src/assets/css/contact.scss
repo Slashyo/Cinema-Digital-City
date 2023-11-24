@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Domine&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+$woodsmoke: #02070E;
+$woodsmoke-shadow: #02070e2c;
+
+@layer base {
+
+
+	form {
+		
+		label {
+			@apply 
+			block 
+			text-xs
+			text-woodsmoke
+			font-body
+			mt-2
+			mb-1
+			ml-1
+		}
+
+		input{
+			@apply
+			w-full
+			rounded-md
+			focus:outline-none
+			transition-all;
+			border: 1px solid $woodsmoke-shadow;
+			&:hover{
+				box-shadow: 1px 1px 2px $woodsmoke-shadow;
+			}
+			&:focus{
+				box-shadow: 2px 2px 4px $woodsmoke-shadow;
+			}
+		}
+		
+		textarea{
+			@apply
+			w-full
+			rounded-md
+			focus:outline-none
+			transition-all;
+			border: 1px solid $woodsmoke-shadow;
+			&:hover{
+				box-shadow: 1px 1px 2px $woodsmoke-shadow;
+			}
+			&:focus{
+				box-shadow: 2px 2px 4px $woodsmoke-shadow;
+			}
+		}
+	}
+}

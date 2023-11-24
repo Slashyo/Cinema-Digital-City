@@ -4,7 +4,7 @@ module.exports = {
     theme: {
         fontFamily: {
             'title': ["Domine", 'serif'],
-            'body': ["Cabine", 'serif'],
+            'body': ["Cabine", 'sans-serif'],
         },
 		colors: {
 			'black-haze': '#F6F7F6',
