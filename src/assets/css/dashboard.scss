@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Domine&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#containerFilm {
+    
+    @apply container mt-10 mx-auto;
+}
+
+thead {
+
+    tr {
+
+        th {
+            @apply py-2 px-4 border-b;
+        }
+    }
+}
+
+tbody {
+
+    tr {
+
+        td {
+            @apply py-2 px-4 border-b text-center; 
+
+            img {
+                @apply mx-auto w-16 h-16 object-cover;
+            }
+        }
+    }
+}

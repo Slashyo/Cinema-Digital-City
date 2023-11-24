@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page d'accueil</title>
+    <title>DashBoard</title>
     <link rel="stylesheet" href="./assets/css/style.scss">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
-
+    <link rel="stylesheet" href="./assets/css/dashboard.scss">
 </head>
-
 <body>
     <header class="bg-white z-50 fixed top-0 w-full shadow">
         <nav id="main-nav" class="bg-white max-w-5xl mx-auto font-poppins p-6 flex items-center justify-between">
@@ -41,8 +39,40 @@
         </nav>
     </header>
 
+    <main>
+        <div id="containerFilm">
+            <h1 class="text-3xl font-semibold mb-6">Films Dashboard</h1>
+    
+            <table class="min-w-full bg-white border border-gray-300">
+                <thead>
+                    <tr>
+                        <th>Titre</th>
+                        <th>Image</th>
+                        <th>Date de sortie</th>
+                        <th>Jusqu'au</th>
+                        <th>Acteurs Principaux</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Le souhait : Asha et la bonne étoile</td>
+                        <td><img src="assets/image/images.jpg" alt="Film 1"></td>
+                        <td>22-11-2023</td>
+                        <td>14-03-2024</td>
+                        <td>Chris Buck, ect..</td>
+                    </tr>
+                    <tr>
+                        <td>Napoléon</td>
+                        <td><img src="assets/image/images (1).jpg" alt="Film 2"></td>
+                        <td>22-11-2023</td>
+                        <td>21-03-2024</td>
+                        <td>Joaquin Phoenix, ect..</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
 
     <script src="assets/script/script.js"></script>
 </body>
-
 </html>
